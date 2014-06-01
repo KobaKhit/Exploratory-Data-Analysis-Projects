@@ -5,7 +5,7 @@ if(!file.exists("data.zip")){
   download.file(url,"data.zip", method="curl")
 }
 
-# Unzip file and read in train and test data sets
+# Unzip file 
 if(!file.exists("household_power_consumption.txt")){unzip("data.zip")}
 
 # Read in data between 0/01/2007 and 02/01/2007
